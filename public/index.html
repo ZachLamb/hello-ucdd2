@@ -17,12 +17,12 @@
 
       <div class="container">
 
-        <h1>Tom Yeh</h1>
+        <h1>Zach Lamb</h1>
 
         <h2>Favorite Programming Languages</h2>
         <ul class="collection">
-          <li class="collection-item">Javascript</li>
-          <li class="collection-item">Haskell</li>
+          <li class="collection-item">Python</li>
+          <li class="collection-item">Elixir</li>
         </ul>
 
         <h2>Favorite Food</h2>
@@ -30,11 +30,11 @@
         </ul>
 
       </div>
-
+      <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
       <script>
 
         // create a firebase reference to the root
-        var ref = new Firebase('https://hello-ucdd2.firebaseio.com/')
+        var ref = new Firebase('https://hello-ucdd2016.firebaseio.com/')
 
         // read data from the location bio/favorite_foods, only once
         ref.child('bio/favorite_foods').once('value', function(snapshot){
